@@ -4,12 +4,15 @@ const Navbar = () => {
   return (
     <div className="flex justify-between p-5">
       <div>
-        <Link to="/">Apprentice</Link>
+        <Link to="/" className="font-semibold">
+          Apprentice
+        </Link>
       </div>
       <div className="flex gap-5">
+        <Link to="/signin">Sign In</Link>
+        <Link to="/signup">Sign Up</Link>
         <Link to="/discover">Discover</Link>
-        <Link to="/signin">Signin</Link>
-        <Link to="/signup">Signup</Link>
+        <Link to="/portfolio">Portfolio</Link>
       </div>
     </div>
   );
